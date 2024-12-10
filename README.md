@@ -4,8 +4,6 @@ Requisitos para rodar o projeto:
 Angular 18
 Docker
 
-=============================
-
 1. Acesse a pasta do projeto `LibraryManager.API`.
 
 2. Execute o comando abaixo para adicionar a migração inicial:
