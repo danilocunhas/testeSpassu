@@ -1,3 +1,11 @@
+
+##Projetos
+
+-LibraryManager (Api .NET 8)
+-LibraryPortal (Front-End Angular 18)
+
+---
+
 ## Requisitos para Rodar o Projeto
 
 - **.NET 8**
@@ -28,3 +36,4 @@
 - **Usuário: sa**
 - **Senha: P@ssw0rd123!**
 
+---
