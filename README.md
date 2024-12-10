@@ -24,7 +24,7 @@
 
 **Informações do banco de dados local no docker:**
 
-**Endereço: localhost,1433**
-**Usuário: sa**
-**Senha: P@ssw0rd123!**
+- **Endereço: localhost,1433**
+- **Usuário: sa**
+- **Senha: P@ssw0rd123!**
 
