@@ -1,0 +1,49 @@
+<div class="modal fade" id="createBookModal" tabindex="-1" aria-labelledby="createBookModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">    
+        <h5 class="modal-title" id="createBookModalLabel">{{ book.id === 0 ? 'Cadastro de Livro' : 'Edição de Livro' }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="bookCode" class="form-label">Código</label>
+            <input type="text" class="form-control" id="bookCode" [(ngModel)]="book.bookCode" mask="00000000" name="bookCode" required>
+          </div>
+          <div class="mb-3">
+            <label for="title" class="form-label">Título</label>
+            <input type="text" class="form-control" id="title" [(ngModel)]="book.title" name="title" required maxlength="50">
+          </div>
+          <div class="mb-3">
+            <label for="publisher" class="form-label">Editora</label>
+            <input type="text" class="form-control" id="publisher" [(ngModel)]="book.publisher" name="publisher" required maxlength="50">
+          </div>
+          <div class="mb-3">
+            <label for="edition" class="form-label">Edição</label>
+            <input type="text" class="form-control" id="edition" [(ngModel)]="book.edition" mask="00000000" name="edition" required>
+          </div>
+          <div class="mb-3">
+            <label for="publishYear" class="form-label">Ano de Publicação</label>
+            <input type="text" class="form-control" id="publishYear" [(ngModel)]="book.publishYear" mask="0000" name="publishYear" required>
+          </div>
+          <div class="mb-3">
+            <label for="price" class="form-label">Preço (R$)</label>
+            <input type="text" class="form-control" id="price" [(ngModel)]="book.price" mask="separator.2" name="price"  maxlength="8" required>
+          </div>
+         
+          <div class="mb-3">
+            <label for="authors" class="form-label">Autores</label>
+            <select id="authors" class="form-select" [(ngModel)]="book.authorIds" name="authors" multiple required>
+              <option *ngFor="let author of authors" [value]="author.id">{{ author.name }}</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary"  (click)="saveBook()">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Lista de livros</h1>
+
+  <button type="button" class="btn btn-primary mb-3" (click)="createBook()" data-bs-toggle="modal"
+    data-bs-target="#createBookModal">
+    Cadastrar Livro
+  </button>
+
+  <app-books-create [book]="selectedBook" (bookUpdatedOrSaved)="onBookUpdatedOrSaved()"></app-books-create>
+
+  <div *ngFor="let book of books" class="book-card">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ book.title }}</h5>
+        <p class="card-text"><strong>Código do Livro:</strong> {{ book.bookCode }}</p>
+        <p class="card-text"><strong>Editora:</strong> {{ book.publisher }}</p>
+        <p class="card-text"><strong>Edição:</strong> {{ book.edition }}</p>
+        <p class="card-text"><strong>Ano de Publicação:</strong> {{ book.publishYear }}</p>
+        <p class="card-text"><strong>Preço:</strong> R$ {{ book.price | number:'1.2-2' }}</p>
+        <div class="card-footer d-flex justify-content-start gap-3 ps-0">
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#createBookModal" (click)="openModal(book)">Editar</button>
+          <button class="btn btn-secondary" (click)="deleteBook(book)">Excluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\bin\Debug\net8.0\LibraryManager.Domain.deps.json
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\bin\Debug\net8.0\LibraryManager.Domain.dll
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\bin\Debug\net8.0\LibraryManager.Domain.pdb
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\LibraryManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\LibraryManager.Domain.AssemblyInfoInputs.cache
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\LibraryManager.Domain.AssemblyInfo.cs
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\LibraryManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\LibraryManager.Domain.dll
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\refint\LibraryManager.Domain.dll
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\LibraryManager.Domain.pdb
+C:\Users\conta\source\repos\LibraryManager\LibraryManager.Domain\obj\Debug\net8.0\ref\LibraryManager.Domain.dll

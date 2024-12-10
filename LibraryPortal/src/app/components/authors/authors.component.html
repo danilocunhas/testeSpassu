@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Lista de autores</h1>
+  
+    <button type="button" class="btn btn-primary mb-3" (click)="createAuthor()" data-bs-toggle="modal"
+      data-bs-target="#createAuthorModal">
+      Cadastrar Autor
+    </button>
+  
+    <app-authors-create [author]="selectedAuthor" (authorUpdatedOrSaved)="onAuthorUpdatedOrSaved()"></app-authors-create>
+  
+    <div *ngFor="let author of authors" class="book-card">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ author.name }}</h5>
+          <p class="card-text"><strong>Código do Author:</strong> {{ author.authorCode }}</p>
+          <p class="card-text"><strong>Nome:</strong> {{ author.name }}</p>
+         
+          <div class="card-footer d-flex justify-content-start gap-3 ps-0">            
+            <button class="btn btn-secondary" (click)="deleteAuthor(author)">Excluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
