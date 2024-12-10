@@ -1,14 +1,23 @@
-Requisitos para rodar o projeto:
+## Requisitos para Rodar o Projeto
 
-#.Net 8
-#Angular 18
-#Docker
+- **.NET 8**
+- **Angular 18**
+- **Docker**
 
-1. Acesse a pasta do projeto `LibraryManager.API`.
+---
 
-2. Execute os comandos abaixo para adicionar a migração inicial:
+## Passos para Rodar as Migrations no Projeto `LibraryManager.API`
 
-   ```bash
-   dotnet ef migrations add InitialDataBase --output-dir Migrations --project ../LibraryManager.Infrastructure/LibraryManager.Infrastructure.csproj --context LibraryContext --startup-project LibraryManager.API.csproj -v
+1. **Acesse a pasta do projeto `LibraryManager.API`:**
 
-   dotnet ef database update
+2. **Execute os seguintes comandos:**
+
+     ```bash
+     dotnet ef migrations add InitialDataBase --output-dir Migrations --project ../LibraryManager.Infrastructure/LibraryManager.Infrastructure.csproj --context LibraryContext --startup-project LibraryManager.API.csproj -v
+     ```
+
+     ```bash
+     dotnet ef database update
+     ```
+
+---
