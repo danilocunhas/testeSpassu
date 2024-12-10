@@ -8,7 +8,7 @@
 
 ## Passos para Rodar as Migrations no Projeto `LibraryManager.API`
 
-1. Execute o docker-compose 
+1. **Execute o docker-compose para iniciar o banco de dados**
 
 2. **Acesse a pasta do projeto `LibraryManager.API`:**
 
@@ -19,3 +19,12 @@
      ```
 
 ---
+
+##
+
+**Informações do banco de dados local no docker:**
+
+**Endereço: localhost,1433**
+**Usuário: sa**
+**Senha: P@ssw0rd123!**
+
