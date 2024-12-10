@@ -1,8 +1,8 @@
 
 ##Projetos
 
--LibraryManager (Api .NET 8)
--LibraryPortal (Front-End Angular 18)
+- LibraryManager (Api .NET 8)
+- LibraryPortal (Front-End Angular 18)
 
 ---
 
