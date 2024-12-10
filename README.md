@@ -8,13 +8,11 @@
 
 ## Passos para Rodar as Migrations no Projeto `LibraryManager.API`
 
-1. **Acesse a pasta do projeto `LibraryManager.API`:**
+1. Execute o docker-compose 
 
-2. **Execute os seguintes comandos:**
+2. **Acesse a pasta do projeto `LibraryManager.API`:**
 
-     ```bash
-     dotnet ef migrations add InitialDataBase --output-dir Migrations --project ../LibraryManager.Infrastructure/LibraryManager.Infrastructure.csproj --context LibraryContext --startup-project LibraryManager.API.csproj -v
-     ```
+3. **Execute o seguinte comando:**
 
      ```bash
      dotnet ef database update
